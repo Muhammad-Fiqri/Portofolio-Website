@@ -1,0 +1,117 @@
+* 
+{
+    /*reset the margin and padding to 0*/
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Bebas Neue";
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+@keyframes intro-anim
+{
+    0% 
+    {
+        opacity: 0%;
+        left: -100px;
+    }
+    100% 
+    {
+        opacity: 100%;
+        left: 0px;
+    }
+}
+
+.intro
+{
+    /*Set the div size to screen size*/
+    width: 100%;
+    height: 100vh;
+    background-image: url("Assets/Scenery.png");
+    background-size: cover;
+    
+    /*center the text*/
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.intro > *
+{
+    /*create the animation*/
+    animation-name: intro-anim;
+    animation-duration: 3s;
+}
+
+.intro > h1
+{
+    /*Style the Header*/
+    font-size: 35px;
+    position: relative;
+}
+
+.intro > p
+{
+    /*Style the P*/
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.intro > .scroll-down-div
+{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.intro > .scroll-down-div > button
+{
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    background-color: rgba(125, 240, 255, 0.178);
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    color: rgba(0, 0, 0, 0.411);
+
+    animation-name: intro-anim;
+    animation-duration: 3s;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.intro > .scroll-down-div > button:hover
+{
+    color: rgb(0, 0, 0);
+    background-color: #3072e2;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.intro > .scroll-down-div > button > i
+{
+    float: right;
+    margin-left: 10px;
+    display: block;
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
+}
+
+.intro > .scroll-down-div > button:hover > i
+{
+    transform: rotate(0);
+}
+
+.intro > h1 > span
+{
+    color: rgb(0, 26, 255);
+}

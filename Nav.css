@@ -1,0 +1,31 @@
+/* navigation section */
+
+.nav
+{
+    /*Center the navigation p*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #3072e2;
+    z-index: 5;
+}
+
+.nav > p
+{
+    /*structure it look like a Nav*/
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav > p:hover
+{
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: blue;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="Muhammad Fiqri, Web Developer, Front-End, Portofolio">
+        <meta name="author" content="Muhammad Fiqri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
+        <link href='https://css.gg/chevron-right.css' rel='stylesheet'>
+        <link href='https://css.gg/chevron-left.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+        <link rel="icon" href="Assets/icon.png">
+
+        <link rel="stylesheet" href="Home.css">
+        <link rel="stylesheet" href="Nav.css">
+        <link rel="stylesheet" href="GameDev.css">
+        <script src="jquery-3.6.1.js"></script>
+        <script type="text/javascript" src="front_page.js"></script>
+
+        <title>Muhammad Fiqri Personal Site</title>
+    </head>
+    <body>
+        <div class="intro">
+            <h1> Welcome to my website, I'm <span>Muhammad Fiqri</span>.</h1>
+            <p>I'm a Front-end web developer.</p>
+            <div class="scroll-down-div">
+                <button type="button" onclick="scrollDown()">Scroll Down<i class="gg-arrow-down"></i></button>
+            </div>
+        </div>
+        <div class="my-works">
+            <nav class="nav">
+                <p onclick="GoHome()">HOME</p>
+                <p onclick="GoMyWorks()">MY WORKS</p>
+                <p>CONTACTS</p>
+                <p>ABOUT</p>
+            </nav>
+            <div class="game-dev">
+                <div class="main-tab">
+                    <h1>Game Development</h1>
+                    <div class="top">
+                        <div class="left-side">
+                            <p>Godot Game Engine</p>
+                            <div class="godot-logo-container">
+                                <img src="Assets/godot.png" alt="Godot Game Engine Logo">
+                            </div>
+                            <p>Develop a story or a <br> fun experiences</p>
+                        </div>
+                        <div class="right-side">
+                            <div class="carousel">
+                                <div id="button-left-carousel">
+                                    <i class="gg-chevron-left"></i>
+                                </div>
+                                <div id="button-right-carousel">
+                                    <i class="gg-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <div class="dot-1"></div>
+                                <div class="dot-2"></div>
+                                <div class="dot-3"></div>
+                                <div class="dot-4"></div>
+                            </div>
+                            <div class="game-info">
+                                <a href=#game>Game Info (Link)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h2>My Godot Skill Level</h2>
+                        <div class="godot-skill-container">
+                            <img src="Assets/godot.png">
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -13,3 +13,10 @@
     margin-top: 10%;
     font-size: 25px;
 }
+
+.my-works > .front-end > .main-tab
+{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 7fr 3fr;
+}

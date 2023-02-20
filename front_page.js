@@ -18,12 +18,26 @@ window.onscroll = function() {get_scroll()};
 function get_scroll() {
     godot_progress_bar = $(".progress-bar");
     if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
-        console.log("I see the progress bar");
+        console.log("I see the godot progress bar");
         godot_progress_bar.css("animation-name","godot-progress-bar");
     } else {
         godot_progress_bar.css("animation-name","none")
     }
     console.log("My Scroll: ", document.documentElement.scrollTop);
+
+    html_progress = $(".html-progress")
+    css_progress = $(".css-progress")
+    js_progress = $(".js-progress")
+    if (document.documentElement.scrollTop >= 1450 && document.documentElement.scrollTop <= 3000) {
+        console.log("I see the web progress bar");
+        html_progress.css("animation-name","html-progress");
+        css_progress.css("animation-name","css-progress");
+        js_progress.css("animation-name","js-progress");
+    } else {
+        html_progress.css("animation-name","none");
+        css_progress.css("animation-name","none");
+        js_progress.css("animation-name","none");
+    }
 }
 
 

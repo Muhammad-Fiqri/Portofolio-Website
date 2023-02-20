@@ -73,7 +73,7 @@
     margin-bottom: 1%;
 }
 
-.main-tab > .top > .left-side > .godot-logo-container > img
+.main-tab > .top > .left-side > .godot-logo-container > a > img
 {
     width: 70%;
     height: 70%;
@@ -86,7 +86,7 @@
     100% {transform: rotate(0deg);}
 }
 
-.main-tab > .top > .left-side > .godot-logo-container > img:hover
+.main-tab > .top > .left-side > .godot-logo-container > a > img:hover
 {
     animation-name: godot-logo-shake;
     animation-duration: 0.5s;
@@ -235,13 +235,13 @@
     margin-bottom: 20px;
 }
 
-.main-tab > .bottom > .godot-skill-container > img
+.main-tab > .bottom > .godot-skill-container > a > img
 {
     width: 100%;
     height: 100%;
 }
 
-.main-tab > .bottom > .godot-skill-container > img:hover
+.main-tab > .bottom > .godot-skill-container > a > img:hover
 {
     animation-name: godot-logo-shake;
     animation-duration: 0.5s;

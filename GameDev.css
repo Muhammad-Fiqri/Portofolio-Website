@@ -111,6 +111,7 @@
 .main-tab > .top > .right-side > .carousel
 {
     background-color: #70ccdc;
+    padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -118,24 +119,47 @@
     align-items: center;
 }
 
+.main-tab > .top > .right-side > .carousel > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.main-tab > .top > .right-side > .carousel > #slide-1
+{
+    display: block;
+}
+
+.main-tab > .top > .right-side > .carousel > #slide-2
+{
+    display: none;
+}
+
+.main-tab > .top > .right-side > .carousel > #slide-3
+{
+    display: none;
+}
+
 .main-tab >.top > .right-side > .carousel > #button-left-carousel
 {
-    position: relative;
+    position: absolute;
+    z-index: 2;
     background-color: white;
     opacity: 50%;
     padding: 10px;
     border-radius: 100%;
-    left: -40%
+    left: 36%;
 }
 
 .main-tab >.top > .right-side > .carousel > #button-right-carousel
 {
-    position: relative;
+    position: absolute;
+    z-index: 2;
     background-color: white;
     opacity: 50%;
     padding: 10px;
     border-radius: 100%;
-    right: -40%;
+    right: 7%;
 }
 
 .main-tab >.top > .right-side > .dots
@@ -154,6 +178,11 @@
     margin: 5px;
 }
 
+.main-tab >.top > .right-side > .dots > #dot-1
+{
+    background-color: black;
+}
+
 .main-tab > .top > .right-side > .game-info > a
 {
     text-decoration: none;
@@ -161,6 +190,15 @@
     font-size: 30px;
 }
 
+.main-tab > .top> .right-side > .game-info > #wide-putin-link
+{
+    display: block;
+}
+
+.main-tab > .top> .right-side > .game-info > #risiko-link, #just-survive-bro-link
+{
+    display: none;
+}
 
 /* main-tab for bottom section */
 

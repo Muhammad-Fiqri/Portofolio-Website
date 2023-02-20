@@ -1,0 +1,15 @@
+.my-works > .front-end > .title
+{
+    margin: auto;
+    width: fit-content;
+    background-color: #d8eff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 20px solid #3366cc;
+    margin-top: 10%;
+    font-size: 25px;
+}

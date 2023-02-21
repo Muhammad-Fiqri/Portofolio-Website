@@ -214,6 +214,11 @@
     transition-timing-function: ease-out;
 }
 
+.my-works > .front-end > .main-tab > .levels > .html-level > a
+{
+    z-index: 1;
+}
+
 .my-works > .front-end > .main-tab > .levels > .html-level > a > svg:hover
 {
     transform: scale(2,2);
@@ -275,9 +280,13 @@
 
 .my-works > .front-end > .main-tab > .levels > .css-level > a > svg
 {
-    z-index: 1;
     transition: 0.2s;
     transition-timing-function: ease-out;
+}
+
+.my-works > .front-end > .main-tab > .levels > .css-level > a
+{
+    z-index: 1;
 }
 
 .my-works > .front-end > .main-tab > .levels > .css-level > a > svg:hover
@@ -325,9 +334,14 @@
 
 .my-works > .front-end > .main-tab > .levels > .js-level > a > svg
 {
-    z-index: 1;
+    z-index: 2;
     transition: 0.2s;
     transition-timing-function: ease-out;
+}
+
+.my-works > .front-end > .main-tab > .levels > .js-level > a
+{
+    z-index: 1;
 }
 
 .my-works > .front-end > .main-tab > .levels > .js-level > a > svg:hover
@@ -351,7 +365,7 @@
     width: 0%;
     height: 100%;
     background-color: #d8eff5;
-    z-index: 1;
+    z-index: 2;
     border-radius: 20px;
 
     animation-name: none;

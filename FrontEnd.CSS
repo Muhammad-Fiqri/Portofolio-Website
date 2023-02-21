@@ -28,20 +28,6 @@
     position: relative;
 }
 
-@keyframes shake {  
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(10deg);}
-    75% {transform: rotate(-10deg);}
-    100% {transform: rotate(0deg);}
-}
-
-.my-works > .front-end > .title:hover
-{
-    animation-name: shake;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-}
-
 .my-works > .front-end > .title::before
 {
     content: " ";

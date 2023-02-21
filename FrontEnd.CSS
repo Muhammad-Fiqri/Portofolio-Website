@@ -210,11 +210,13 @@
 {
     z-index: 1;
     margin: auto;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
 }
 
 .my-works > .front-end > .main-tab > .levels > .html-level > svg:hover
 {
-    transform: rotate(30deg);
+    transform: scale(2,2);
 }
 
 .my-works > .front-end > .main-tab > .levels > .html-level > .html-progress-bar
@@ -274,11 +276,13 @@
 .my-works > .front-end > .main-tab > .levels > .css-level > svg
 {
     z-index: 1;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
 }
 
 .my-works > .front-end > .main-tab > .levels > .css-level > svg:hover
 {
-    transform: rotate(30deg);
+    transform: scale(2,2);
 }
 
 .my-works > .front-end > .main-tab > .levels > .css-level > .css-progress-bar
@@ -322,11 +326,13 @@
 .my-works > .front-end > .main-tab > .levels > .js-level > svg
 {
     z-index: 1;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
 }
 
 .my-works > .front-end > .main-tab > .levels > .js-level > svg:hover
 {
-    transform: rotate(30deg);
+    transform: scale(2,2);
 }
 
 .my-works > .front-end > .main-tab > .levels > .js-level > .js-progress-bar

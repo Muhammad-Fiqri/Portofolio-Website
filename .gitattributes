@@ -1,4 +1,7 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+Assets/Video[[:space:]]Trailer[[:space:]]Traveloka.mp4 filter=lfs diff=lfs merge=lfs -text
+Assets/Kingkong[[:space:]]Coffee[[:space:]]Animation[[:space:]]Adverstisement.mp4 filter=lfs diff=lfs merge=lfs -text
+Assets/Wide[[:space:]]Putin[[:space:]]Videos.mp4 filter=lfs diff=lfs merge=lfs -text
 *.eps filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text

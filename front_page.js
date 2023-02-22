@@ -41,17 +41,17 @@ function get_scroll() {
 }
 
 
-current_slide = 0;
+current_images_slide = 0;
 
-function change_slide(n) {
+function change_images_slide(n) {
     slide_1 = $("#slide-1");
     slide_2 = $("#slide-2");
     slide_3 = $("#slide-3");
     slides = [slide_1,slide_2,slide_3];
 
-    dot_1 = $("#dot-1");
-    dot_2 = $("#dot-2");
-    dot_3 = $("#dot-3");
+    dot_1 = $("#dot-image-1");
+    dot_2 = $("#dot-image-2");
+    dot_3 = $("#dot-image-3");
     dots = [dot_1,dot_2,dot_3];
 
     link_1 = $("#wide-putin-link");
@@ -59,25 +59,25 @@ function change_slide(n) {
     link_3 = $("#just-survive-bro-link");
     links = [link_1,link_2,link_3];
 
-    current_slide += n;
+    current_images_slide += n;
 
-    if (current_slide > slides.length-1)
+    if (current_images_slide > slides.length-1)
     {
-        current_slide = 0;
+        current_images_slide = 0;
     }
 
-    if (current_slide < 0)
+    if (current_images_slide < 0)
     {
-        current_slide = slides.length-1;
+        current_images_slide = slides.length-1;
     } 
 
     console.log("changing slide: ",n);
-    console.log("current_slide: ",current_slide);
+    console.log("current_images_slide: ",current_images_slide);
 
-    slides[current_slide].css("display","block");
+    slides[current_images_slide].css("display","block");
     for (i of slides)
     {
-        if (i == slides[current_slide])
+        if (i == slides[current_images_slide])
         {
             continue;
         } else {
@@ -85,10 +85,10 @@ function change_slide(n) {
         }
     }
 
-    dots[current_slide].css("background-color","black");
+    dots[current_images_slide].css("background-color","black");
     for (i of dots)
     {
-        if (i == dots[current_slide])
+        if (i == dots[current_images_slide])
         {
             continue;
         } else {
@@ -96,14 +96,69 @@ function change_slide(n) {
         }
     }
 
-    links[current_slide].css("display","block");
+    links[current_images_slide].css("display","block");
     for (i of links)
     {
-        if (i == links[current_slide])
+        if (i == links[current_images_slide])
         {
             continue;
         } else {
             i.css("display","none");
+        }
+    }
+}
+
+current_videos_slide = 0
+
+function change_videos_slide(n)
+{
+    slide_1 = $("#vid-1");
+    slide_2 = $("#vid-2");
+    slide_3 = $("#vid-3");
+    slides = [slide_1,slide_2,slide_3];
+
+    dot_1 = $("#dot-video-1");
+    dot_2 = $("#dot-video-2");
+    dot_3 = $("#dot-video-3");
+    dots = [dot_1,dot_2,dot_3];
+
+    current_videos_slide += n;
+
+
+
+    if (current_videos_slide > slides.length-1)
+    {
+        current_videos_slide = 0;
+    }
+
+    if (current_videos_slide < 0)
+    {
+        current_videos_slide = slides.length-1;
+    } 
+
+    console.log("changing slide: ",n);
+    console.log("current_videos_slide: ",current_videos_slide);
+
+    slides[current_videos_slide].css("display","block");
+    for (i of slides)
+    {
+        if (i == slides[current_videos_slide])
+        {
+            continue;
+        } else {
+            i.css("display","none");
+        }
+    }
+
+    dots[current_videos_slide].css("transform","scale(1.2,1.2)");
+
+    for (i of dots)
+    {
+        if (i == dots[current_videos_slide])
+        {
+            continue;
+        } else {
+            i.css("transform","scale(1,1)");
         }
     }
 }

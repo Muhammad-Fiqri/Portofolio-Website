@@ -8,6 +8,8 @@
     margin-top: 100px;
 }
 
+/* title */
+
 .my-works > .video-editing > .title
 {
     background-color: #d8eff5;
@@ -29,12 +31,16 @@
     margin-right: 30px;
 }
 
+/*main tab*/
+
 .my-works > .video-editing > .main-tab
 {
     border-radius: 20px;
     width: 95vw;
     padding: 30px;
 }
+
+/*slideshow*/
 
 .my-works > .video-editing > .main-tab > .slide-show > .frame
 {
@@ -43,6 +49,11 @@
     height: 90vh;
     border-radius: 20px;
     display: flex;
+}
+
+.my-works > .video-editing > .main-tab > .slide-show > .frame > #vid-2, #vid-3
+{
+    display: none;
 }
 
 .my-works > .video-editing > .main-tab > .slide-show > .frame > .button-left, .button-right
@@ -84,4 +95,9 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
+}
+
+.my-works > .video-editing > .main-tab > .slide-show > .dots > #dot-video-1
+{
+    transform: scale(1.2,1.2);
 }

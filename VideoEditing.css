@@ -159,6 +159,17 @@
     grid-template-columns: 1fr 9fr;
 }
 
+.my-works > .video-editing > .main-tab > .levels > .premiere-level > .premiere-logo, .after-level > .after-logo, .audition-level > .audition-logo
+{
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.my-works > .video-editing > .main-tab > .levels > .premiere-level > .premiere-logo:hover, .after-level > .after-logo:hover, .audition-level > .audition-logo:hover
+{
+    transform: scale(2,2);
+}
+
 .my-works > .video-editing > .main-tab > .levels > .premiere-level > .progress-bar
 {
     background-color: #70cddd;

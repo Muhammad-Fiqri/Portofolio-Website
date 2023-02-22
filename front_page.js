@@ -16,7 +16,7 @@ function GoMyWorks()
 window.onscroll = function() {get_scroll()};
 
 function get_scroll() {
-    godot_progress_bar = $(".progress-bar");
+    godot_progress_bar = $(".godot-progress-bar");
     if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
         console.log("I see the godot progress bar");
         godot_progress_bar.css("animation-name","godot-progress-bar");
@@ -37,6 +37,21 @@ function get_scroll() {
         html_progress.css("animation-name","none");
         css_progress.css("animation-name","none");
         js_progress.css("animation-name","none");
+    }
+
+    premiere_progress = $(".premiere-progress")
+    after_progress = $(".after-progress")
+    audition_progress = $(".audition-progress")
+
+    if (document.documentElement.scrollTop >= 3660 && document.documentElement.scrollTop <= 5000) {
+        console.log("I see the video editing progress bar");
+        premiere_progress.css("animation-name","premiere-progress");
+        after_progress.css("animation-name","after-progress");
+        audition_progress.css("animation-name","audition-progress");
+    } else {
+        premiere_progress.css("animation-name","none");
+        after_progress.css("animation-name","none");
+        audition_progress.css("animation-name","none");
     }
 }
 

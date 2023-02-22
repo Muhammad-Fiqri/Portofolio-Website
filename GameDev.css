@@ -290,7 +290,7 @@
     to {width: 80%;}
 }
 
-.main-tab > .bottom > .progress-bar-bg > .progress-bar
+.main-tab > .bottom > .progress-bar-bg > .godot-progress-bar
 {
     background-color: #ccffff;
     border-radius: 15px;

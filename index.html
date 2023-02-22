@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="Nav.css">
         <link rel="stylesheet" href="GameDev.css">
         <link rel="stylesheet" href="FrontEnd.CSS">
+        <link rel="stylesheet" href="VideoEditing.css">
         <script src="jquery-3.6.1.js"></script>
         <script type="text/javascript" src="front_page.js"></script>
 
@@ -55,17 +56,17 @@
                                 <img id="slide-1" src="Assets/game-dev-slideshow/wide putin game.png">
                                 <img id="slide-2" src="Assets/game-dev-slideshow/Kfalkenhagen Game.png">
                                 <img id="slide-3" src="Assets/game-dev-slideshow/Just Survive Bro Game.png">
-                                <div id="button-left-carousel" onclick="change_slide(-1)">
+                                <div id="button-left-carousel" onclick="change_images_slide(-1)">
                                     <i class="gg-chevron-left"></i>
                                 </div>
-                                <div id="button-right-carousel" onclick="change_slide(1)">
+                                <div id="button-right-carousel" onclick="change_images_slide(1)">
                                     <i class="gg-chevron-right"></i>
                                 </div>
                             </div>
                             <div class="dots">
-                                <div id="dot-1"></div>
-                                <div id="dot-2"></div>
-                                <div id="dot-3"></div>
+                                <div id="dot-image-1"></div>
+                                <div id="dot-image-2"></div>
+                                <div id="dot-image-3"></div>
                             </div>
                             <div class="game-info">
                                 <a target="_blank" id="wide-putin-link" href="https://muhammad-fiqri.itch.io/wide-putin-game">Wide Walking (on Itch.io)</a>
@@ -82,7 +83,7 @@
                             </a>
                         </div>
                         <div class="progress-bar-bg">
-                            <div class="progress-bar"></div>
+                            <div class="godot-progress-bar"></div>
                         </div>
                     </div>
                 </div>
@@ -140,6 +141,67 @@
                         <p>Animation made with Vanilla CSS giving a <span style="color: blue;">alive</span> like feel on the website</p>
                         <p>Framework currently experimenting on <span style="color: blue;">React.js</span> giving a <span style="color: blue;">fast</span> website update 
                             rendering</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-editing">
+                <div class="title">
+                    <h2>Video Editing</h2>
+                </div>
+                <div class="main-tab">
+                    <div class="slide-show">
+                        <div class="frame">
+                            <video id="vid-1" src="Assets/Wide Putin Videos.mp4" width="100%" height="100%" controls></video>
+                            <video id="vid-2" src="Assets/Kingkong Coffee Animation Adverstisement.mp4" width="100%" height="100%" controls></video>
+                            <video id="vid-3" src="Assets/Video Trailer Traveloka.mp4" width="100%" height="100%" controls></video>
+                            <div class="button-left" onclick="change_videos_slide(-1)"><i class="gg-chevron-left"></i></div>
+                            <div class="button-right" onclick="change_videos_slide(1)"><i class="gg-chevron-right"></i></div>
+                        </div>
+                        <div class="dots">
+                            <div id="dot-video-1"></div>
+                            <div id="dot-video-2"></div>
+                            <div id="dot-video-3"></div>
+                        </div>
+                    </div>
+                    <div class="levels">
+                        <p class="title">My Skill Level</p>
+                        <div class="premiere-level">
+                            <div class="premiere-logo">
+                                <svg width="100" height="100">
+                                    <image xlink:href="Assets/premiere.svg" width="100" height="100"></image>
+                                </svg>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="premiere-progress"></div>
+                            </div>
+                        </div>
+                        <div class="after-level">
+                            <div class="after-logo">
+                                <svg width="100" height="100">
+                                    <image xlink:href="Assets/after.svg" width="100" height="100"></image>
+                                </svg>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="after-progress"></div>
+                            </div>
+                        </div>
+                        <div class="audition-level">
+                            <div class="audition-logo">
+                                <svg width="100" height="100">
+                                    <image xlink:href="Assets/audition.svg" width="100" height="100"></image>
+                                </svg>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="audition-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>I sometimes edit video when not coding</p>
+                        <br>
+                        <p>I use Adobe Premiere Pro for editing video on my youtube channel,</p>
+                        <p>After Effects for motion graphic animation</p>
+                        <p>and use Audition when the video sound is not clear</p>
                     </div>
                 </div>
             </div>

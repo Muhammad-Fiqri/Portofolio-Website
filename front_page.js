@@ -140,13 +140,18 @@ function change_videos_slide(n)
     console.log("current_videos_slide: ",current_videos_slide);
 
     slides[current_videos_slide].css("display","block");
+
     for (i of slides)
     {
+        console.log(i);
         if (i == slides[current_videos_slide])
         {
+            i.get(0).currentTime = 0
+            i.get(0).play();
             continue;
         } else {
             i.css("display","none");
+            i.get(0).pause();
         }
     }
 

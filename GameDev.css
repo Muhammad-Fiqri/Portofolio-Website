@@ -17,7 +17,7 @@
     padding: 20px;
     width: 99vw;
     height: 150vh;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: #d2edf3;
     box-shadow: 5px 5px 5px gray;
 
@@ -125,6 +125,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .main-tab > .top > .right-side > .carousel > img
@@ -157,6 +159,12 @@
     padding: 10px;
     border-radius: 100%;
     left: 34%;
+    transition: 0.5s;
+}
+
+.main-tab >.top > .right-side > .carousel > #button-left-carousel:hover
+{
+    opacity: 100%;
 }
 
 .main-tab >.top > .right-side > .carousel > #button-right-carousel
@@ -168,6 +176,12 @@
     padding: 10px;
     border-radius: 100%;
     right: 7%;
+    transition: 0.5s;
+}
+
+.main-tab >.top > .right-side > .carousel > #button-right-carousel:hover
+{
+    opacity: 100%;
 }
 
 .main-tab >.top > .right-side > .dots
@@ -186,7 +200,7 @@
     margin: 5px;
 }
 
-.main-tab >.top > .right-side > .dots > #dot-1
+.main-tab >.top > .right-side > .dots > #dot-image-1
 {
     background-color: black;
 }
@@ -276,7 +290,7 @@
     to {width: 80%;}
 }
 
-.main-tab > .bottom > .progress-bar-bg > .progress-bar
+.main-tab > .bottom > .progress-bar-bg > .godot-progress-bar
 {
     background-color: #ccffff;
     border-radius: 15px;

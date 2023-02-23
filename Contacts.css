@@ -1,5 +1,50 @@
+body
+{
+    position: relative;
+    z-index: 0;
+}
+
+
 .contacts
 {
     width: 40vw;
-    height: 100vh;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #3072e2;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.514);
+}
+
+.contacts > .close
+{
+    position: relative;
+}
+
+.contacts > .close > svg
+{
+    position: absolute;
+    top: 20px;
+    left: 490px;
+}
+
+.contacts > .title
+{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 75px;
+}
+
+.contacts > .links
+{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: repeat(5,1fr);
 }

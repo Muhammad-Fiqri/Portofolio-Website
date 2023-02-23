@@ -182,3 +182,23 @@ function change_videos_slide(n)
         }
     }
 }
+
+function showContacts()
+{
+    contacts_tab = $(".contacts");
+    intro_tab = $(".intro");
+    my_works_tab = $(".my-works");
+
+    contacts_tab.css("left", "0vw");
+    intro_tab.css("filter","brightness(50%)");
+    my_works_tab.css("filter","brightness(50%)");
+}
+
+function hideContacts()
+{
+    contacts_tab = $(".contacts");
+
+    contacts_tab.css("left", "-40vw");
+    intro_tab.css("filter","brightness(100%)");
+    my_works_tab.css("filter","brightness(100%)");
+}

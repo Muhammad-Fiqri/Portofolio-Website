@@ -26,22 +26,42 @@
     </head>
     <body>
         <div class="contacts">
-            <div class="close">
+            <div class="close" onclick="hideContacts()">
                 <svg width="25" height="25">
                     <image href="Assets\close.svg" width="25" height="25"></image>
                 </svg>
             </div>
             <div class="title">Contacts</div>
             <div class="links">
-                <div class="github-logo"></div>
+                <div class="github-logo">
+                    <svg width="100" height="100">
+                        <image href="Assets/github.svg" width="100" height="100"></image>
+                    </svg>
+                </div>
                 <div class="github-text">github</div>
-                <div class="instagram-logo"></div>
+                <div class="instagram-logo">
+                    <svg width="100" height="100">
+                        <image href="Assets/instagram.svg" width="100" height="100"></image>
+                    </svg>
+                </div>
                 <div class="instagram-text">instagram</div>
-                <div class="whatsapp-logo"></div>
+                <div class="whatsapp-logo">
+                    <svg width="100" height="100">
+                        <image href="Assets/whatsapp.svg" width="100" height="100"></image>
+                    </svg>
+                </div>
                 <div class="whatsapp-text">whatsapp</div>
-                <div class="linkedin-logo"></div>
+                <div class="linkedin-logo">
+                    <svg width="100" height="100">
+                        <image href="Assets/linkedin.svg" width="100" height="100"></image>
+                    </svg>
+                </div>
                 <div class="linkedin-text">linkedin</div>
-                <div class="upwork-logo"></div>
+                <div class="upwork-logo">
+                    <svg width="100" height="100">
+                        <image href="Assets/upwork.svg" width="100" height="100"></image>
+                    </svg>
+                </div>
                 <div class="upwork-text">upwork</div>
             </div>
         </div>
@@ -56,7 +76,7 @@
             <nav class="nav">
                 <p onclick="GoHome()">HOME</p>
                 <p onclick="GoMyWorks()">MY WORKS</p>
-                <p>CONTACTS</p>
+                <p onclick="showContacts()">CONTACTS</p>
                 <p>ABOUT</p>
             </nav>
             <div class="game-dev">

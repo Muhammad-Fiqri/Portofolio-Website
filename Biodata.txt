@@ -1,0 +1,20 @@
+I am Muhammad Fiqri.
+I am Indonesian.
+I am a Programmer.
+
+I studied at a Vocational Public High School No.1 in Indonesia Majoring in Multimedia, but I am more into Programming than Designing and Editing.
+
+I am currently studying at Gunadarma University while working freelance as a side Job.
+
+Portfolio:
+Game Dev:
+- Wide Walking (Infinite Running Game)
+- Number Wars (Multiplayer Strategy Game)
+- Loka Mania (Airport Management Game)
+- Risiko (Strategy Board Game)
+
+Web Dev:
+- Portoflio in React.JS
+
+Video Editing:
+- Coffee Ad Animation (After Effects)

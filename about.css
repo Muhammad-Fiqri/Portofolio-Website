@@ -1,0 +1,79 @@
+.about-tab
+{
+    width: 40vw;
+    height: 100vh;
+    background-color: #3072e2;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    z-index: 4;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.about-tab > .close-about
+{
+    position: absolute;
+    right: 36vw;
+    top: 4vh;
+}
+
+.about-tab > .title
+{
+    color: white;
+    font-size: 100px;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(20deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.about-tab > .title:hover
+{
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+.about-tab > .profile-picture > img
+{
+    border-radius: 100%;
+    transition: 1s;
+}
+
+.about-tab > .profile-picture > img:hover
+{
+    transform: scale(1.2,1.2);
+}
+
+.about-tab > .text
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.about-tab > .text:hover
+{
+    transform: scale(1.5,1.5);
+}
+
+.about-tab > .text:hover > p
+{
+    text-shadow: 5px 5px 5px black;
+}
+
+.about-tab > .text > p > span
+{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

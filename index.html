@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="FrontEnd.CSS">
         <link rel="stylesheet" href="VideoEditing.css">
         <link rel="stylesheet" href="Contacts.css">
+        <link rel="stylesheet" href="about.css">
         <script src="jquery-3.6.1.js"></script>
         <script type="text/javascript" src="front_page.js"></script>
 
@@ -26,7 +27,7 @@
     </head>
     <body>
         <div class="contacts">
-            <div class="close" onclick="hideContacts()">
+            <div class="close-contacts" onclick="hideContacts()">
                 <svg width="25" height="25">
                     <image href="Assets\close.svg" width="25" height="25"></image>
                 </svg>
@@ -95,7 +96,27 @@
                 </div>
             </div>
         </div>
-        <div class="contacts-cover"></div>
+        <div class="about-tab">
+            <div class="close-about" onclick="hideAbout()">
+                <svg width="25" height="25">
+                    <image href="Assets\close.svg" width="25" height="25"></image>
+                </svg>
+            </div>
+            <div class="title">ABOUTS</div>
+            <div class="profile-picture">
+                <img src="Assets/profile_photo.jpg" alt="profile-picture">
+            </div>
+            <div class="text">
+                <p><span>i'm muhammad fiqri</span><br><br>
+
+                    i want to be a software engineer<br><br>
+                    
+                    i am a UNIVERSITY STUDENT OF GUNADARMA<br>
+                    MAJORING IN COMPUTER SCIENCE
+                </p>
+            </div>
+        </div>
+        <div class="hover-cover"></div>
         <div class="intro">
             <h1> Welcome to my website, I'm <span>Muhammad Fiqri</span>.</h1>
             <p>I'm a Front-end web developer.</p>
@@ -108,7 +129,7 @@
                 <p onclick="GoHome()">HOME</p>
                 <p onclick="GoMyWorks()">MY WORKS</p>
                 <p onclick="showContacts()">CONTACTS</p>
-                <p>ABOUT</p>
+                <p onclick="showAbout()">ABOUT</p>
             </nav>
             <div class="game-dev">
                 <div class="main-tab">

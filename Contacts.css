@@ -11,7 +11,7 @@ body
     position: fixed;
     top: 0;
     left: -40vw;
-    z-index: 2;
+    z-index: 4;
     background-color: #3072e2;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -20,6 +20,17 @@ body
 
     display: flex;
     flex-direction: column;
+}
+
+.contacts-cover
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+    display: none;
+    z-index: 3;
 }
 
 .contacts > .close
@@ -44,6 +55,19 @@ body
     font-size: 75px;
 }
 
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(15deg);}
+    75% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.contacts > .title:hover
+{
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
 .contacts > .links
 {
     display: grid;
@@ -51,6 +75,13 @@ body
     grid-template-columns: 1fr 9fr;
     grid-template-rows: repeat(5,1fr);
     column-gap: 5%;
+    row-gap: 1%;
+}
+
+.contacts > .links > div > a
+{
+    text-decoration: none;
+    color: white;
 }
 
 .contacts > .links > .upwork-text , .github-text , .instagram-text , .whatsapp-text , .linkedin-text
@@ -58,6 +89,21 @@ body
     display: flex;
     justify-content: left;
     align-items: center;
-    color: white;
     font-size: 50px;
+    transition-duration: 0.5s;
+}
+
+.contacts > .links > .upwork-logo , .github-logo , .instagram-logo , .whatsapp-logo , .linkedin-logo
+{
+    transition-duration: 1s;
+}
+
+.contacts > .links > .upwork-text:hover , .github-text:hover , .instagram-text:hover , .whatsapp-text:hover , .linkedin-text:hover
+{
+    transform: translateX(50px);
+}
+
+.contacts > .links > .upwork-logo:hover , .github-logo:hover , .instagram-logo:hover , .whatsapp-logo:hover , .linkedin-logo:hover
+{
+    display: block;
 }

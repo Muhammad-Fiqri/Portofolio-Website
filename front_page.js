@@ -188,17 +188,17 @@ function showContacts()
     contacts_tab = $(".contacts");
     intro_tab = $(".intro");
     my_works_tab = $(".my-works");
+    contacts_cover = $(".contacts-cover");
 
     contacts_tab.css("left", "0vw");
-    intro_tab.css("filter","brightness(50%)");
-    my_works_tab.css("filter","brightness(50%)");
+    contacts_cover.css("display", "block");
 }
 
 function hideContacts()
 {
     contacts_tab = $(".contacts");
+    contacts_cover = $(".contacts-cover");
 
     contacts_tab.css("left", "-40vw");
-    intro_tab.css("filter","brightness(100%)");
-    my_works_tab.css("filter","brightness(100%)");
+    contacts_cover.css("display", "none");
 }

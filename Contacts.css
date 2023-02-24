@@ -10,7 +10,7 @@ body
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -40vw;
+    left: -50vw;
     z-index: 4;
     background-color: #3072e2;
     border-top-right-radius: 25px;

@@ -199,6 +199,6 @@ function hideContacts()
     contacts_tab = $(".contacts");
     contacts_cover = $(".contacts-cover");
 
-    contacts_tab.css("left", "-40vw");
+    contacts_tab.css("left", "-50vw");
     contacts_cover.css("display", "none");
 }

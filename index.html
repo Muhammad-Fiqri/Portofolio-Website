@@ -18,12 +18,84 @@
         <link rel="stylesheet" href="GameDev.css">
         <link rel="stylesheet" href="FrontEnd.CSS">
         <link rel="stylesheet" href="VideoEditing.css">
+        <link rel="stylesheet" href="Contacts.css">
         <script src="jquery-3.6.1.js"></script>
         <script type="text/javascript" src="front_page.js"></script>
 
         <title>Muhammad Fiqri Personal Site</title>
     </head>
     <body>
+        <div class="contacts">
+            <div class="close" onclick="hideContacts()">
+                <svg width="25" height="25">
+                    <image href="Assets\close.svg" width="25" height="25"></image>
+                </svg>
+            </div>
+            <div class="title">Contact Me!</div>
+            <div class="links">
+                <div class="github-logo">
+                    <a href="https://github.com/Muhammad-Fiqri" target="_blank">
+                        <svg width="100" height="100">
+                            <image href="Assets/github.svg" width="100" height="100"></image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="github-text">
+                    <a href="https://github.com/Muhammad-Fiqri" target="_blank">
+                        github
+                    </a>
+                </div>
+                <div class="instagram-logo">
+                    <a href="https://www.instagram.com/muhammadfiqri.studios/" target="_blank">
+                        <svg width="100" height="100">
+                            <image href="Assets/instagram.svg" width="100" height="100"></image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="instagram-text">
+                    <a href="https://www.instagram.com/muhammadfiqri.studios/" target="_blank">
+                        instagram
+                    </a>
+                </div>
+                <div class="whatsapp-logo">
+                    <a href="https://whas.me/wJllj36hCB" target="_blank">
+                        <svg width="100" height="100">
+                            <image href="Assets/whatsapp.svg" width="100" height="100"></image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="whatsapp-text">
+                    <a href="https://whas.me/wJllj36hCB" target="_blank">
+                        whatsapp
+                    </a>
+                </div>
+                <div class="linkedin-logo">
+                    <a href="https://www.linkedin.com/in/muhammad-fiqri-b18389182/" target="_blank">
+                        <svg width="100" height="100">
+                            <image href="Assets/linkedin.svg" width="100" height="100"></image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="linkedin-text">
+                    <a href="https://www.linkedin.com/in/muhammad-fiqri-b18389182/" target="_blank">
+                        linkedin
+                    </a>
+                </div>
+                <div class="upwork-logo">
+                    <a href="https://www.upwork.com/freelancers/~013836cee452a21a9b" target="_blank">
+                        <svg width="100" height="100">
+                            <image href="Assets/upwork.svg" width="100" height="100"></image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="upwork-text">
+                    <a href="https://www.upwork.com/freelancers/~013836cee452a21a9b" target="_blank">
+                        upwork
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-cover"></div>
         <div class="intro">
             <h1> Welcome to my website, I'm <span>Muhammad Fiqri</span>.</h1>
             <p>I'm a Front-end web developer.</p>
@@ -35,7 +107,7 @@
             <nav class="nav">
                 <p onclick="GoHome()">HOME</p>
                 <p onclick="GoMyWorks()">MY WORKS</p>
-                <p>CONTACTS</p>
+                <p onclick="showContacts()">CONTACTS</p>
                 <p>ABOUT</p>
             </nav>
             <div class="game-dev">

@@ -1,0 +1,109 @@
+body
+{
+    position: relative;
+    z-index: 0;
+}
+
+.contacts
+{
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -40vw;
+    z-index: 4;
+    background-color: #3072e2;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-cover
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+    display: none;
+    z-index: 3;
+}
+
+.contacts > .close
+{
+    position: relative;
+}
+
+.contacts > .close > svg
+{
+    position: absolute;
+    top: 20px;
+    left: 490px;
+}
+
+.contacts > .title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 75px;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(15deg);}
+    75% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.contacts > .title:hover
+{
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+.contacts > .links
+{
+    display: grid;
+    margin-left: 5%;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: repeat(5,1fr);
+    column-gap: 5%;
+    row-gap: 1%;
+}
+
+.contacts > .links > div > a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.contacts > .links > .upwork-text , .github-text , .instagram-text , .whatsapp-text , .linkedin-text
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 50px;
+    transition-duration: 0.5s;
+}
+
+.contacts > .links > .upwork-logo , .github-logo , .instagram-logo , .whatsapp-logo , .linkedin-logo
+{
+    transition-duration: 1s;
+}
+
+.contacts > .links > .upwork-text:hover , .github-text:hover , .instagram-text:hover , .whatsapp-text:hover , .linkedin-text:hover
+{
+    transform: translateX(50px);
+}
+
+.contacts > .links > .upwork-logo:hover , .github-logo:hover , .instagram-logo:hover , .whatsapp-logo:hover , .linkedin-logo:hover
+{
+    display: block;
+}

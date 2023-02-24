@@ -186,19 +186,35 @@ function change_videos_slide(n)
 function showContacts()
 {
     contacts_tab = $(".contacts");
-    intro_tab = $(".intro");
-    my_works_tab = $(".my-works");
-    contacts_cover = $(".contacts-cover");
+    hover_cover = $(".hover-cover");
 
     contacts_tab.css("left", "0vw");
-    contacts_cover.css("display", "block");
+    hover_cover.css("display", "block");
 }
 
 function hideContacts()
 {
     contacts_tab = $(".contacts");
-    contacts_cover = $(".contacts-cover");
+    hover_cover = $(".hover-cover");
 
     contacts_tab.css("left", "-50vw");
-    contacts_cover.css("display", "none");
+    hover_cover.css("display", "none");
+}
+
+function showAbout()
+{
+    about_tab = $(".about-tab");
+    hover_cover = $(".hover-cover");
+
+    about_tab.css("right", "0vw");
+    hover_cover.css("display", "block");
+}
+
+function hideAbout()
+{
+    about_tab = $(".about-tab");
+    hover_cover = $(".hover-cover");
+
+    about_tab.css("right", "-50vw");
+    hover_cover.css("display", "none");
 }

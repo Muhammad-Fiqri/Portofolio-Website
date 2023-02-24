@@ -22,7 +22,7 @@ body
     flex-direction: column;
 }
 
-.contacts-cover
+.hover-cover
 {
     position: fixed;
     width: 100vw;
@@ -33,12 +33,12 @@ body
     z-index: 3;
 }
 
-.contacts > .close
+.contacts > .close-contacts
 {
     position: relative;
 }
 
-.contacts > .close > svg
+.contacts > .close-contacts > svg
 {
     position: absolute;
     top: 20px;
@@ -65,7 +65,7 @@ body
 .contacts > .title:hover
 {
     animation-name: shake;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 
 .contacts > .links

@@ -18,12 +18,12 @@ html
     0% 
     {
         opacity: 0%;
-        left: -100px;
+        left: -100vh;
     }
     100% 
     {
         opacity: 100%;
-        left: 0px;
+        left: 0vh;
     }
 }
 
@@ -115,4 +115,66 @@ html
 .intro > h1 > span
 {
     color: rgb(0, 26, 255);
+}
+
+@media only screen and (max-width: 600px)
+{
+    .intro {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("Assets/Scenery Mobile Background.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .intro > h1
+    {
+        /*Style the Header*/
+        font-size: 20px;
+    }
+
+    .intro > p
+    {
+        /*Style the P*/
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .intro > .scroll-down-div > button
+    {
+        padding: 10px;
+        margin-top: 20px;
+        border: 2px solid rgba(0, 0, 0, 0.507);
+        background-color: rgba(125, 240, 255, 0.178);
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        float: left;
+        color: rgba(0, 0, 0, 0.411);
+
+        animation-name: intro-anim;
+        animation-duration: 3s;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+
+    .intro > .scroll-down-div > button > i
+    {
+        float: right;
+        margin-left: 10px;
+        display: block;
+        transform: rotate(-90deg);
+        transition-duration: 0.5s;
+    }
+
+    .intro > .scroll-down-div > button:hover > i
+    {
+        transform: rotate(0);
+    }
+
 }

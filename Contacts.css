@@ -36,13 +36,8 @@ body
 .contacts > .close-contacts
 {
     position: relative;
-}
-
-.contacts > .close-contacts > svg
-{
-    position: absolute;
-    top: 20px;
-    left: 490px;
+    top: 4vh;
+    left: 36vw;
 }
 
 .contacts > .title
@@ -106,4 +101,11 @@ body
 .contacts > .links > .upwork-logo:hover , .github-logo:hover , .instagram-logo:hover , .whatsapp-logo:hover , .linkedin-logo:hover
 {
     display: block;
+}
+
+@media only screen and (max-width: 600px){
+    .contacts
+    {
+        left: -100vw;
+    }
 }

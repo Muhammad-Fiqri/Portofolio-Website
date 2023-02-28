@@ -215,3 +215,9 @@ function hideAbout()
     about_tab.css("right", "-100vw");
     hover_cover.css("display", "none");
 }
+
+function showNavMobile()
+{
+    nav_items = $(".nav > p");
+    nav_items.toggle(500)
+}

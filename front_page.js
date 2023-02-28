@@ -194,7 +194,7 @@ function hideContacts()
     contacts_tab = $(".contacts");
     hover_cover = $(".hover-cover");
 
-    contacts_tab.css("left", "-50vw");
+    contacts_tab.css("left", "-100vw");
     hover_cover.css("display", "none");
 }
 
@@ -212,6 +212,6 @@ function hideAbout()
     about_tab = $(".about-tab");
     hover_cover = $(".hover-cover");
 
-    about_tab.css("right", "-50vw");
+    about_tab.css("right", "-100vw");
     hover_cover.css("display", "none");
 }

@@ -317,13 +317,13 @@
 
     .main-tab
     {
-        margin: 5vw;
+        margin: 0;
         padding: 10px;
-        width: 95vw;
+        width: 100vw;
         height: auto;
-        border-radius: 20px;
+        border-radius: 0px;
         background-color: #d2edf3;
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: none;
 
         display: grid;
         grid-template-rows: auto auto auto;
@@ -362,8 +362,7 @@
     .main-tab > .top > .left-side > p
     {
         text-align: center;
-        font-size: 20px;
-        font-style: bold;
+        font-size: 25px;
     }
 
     .main-tab > .top > .left-side > .godot-logo-container

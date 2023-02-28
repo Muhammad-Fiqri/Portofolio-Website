@@ -82,6 +82,6 @@
 @media only screen and (max-width: 600px){
     .about-tab
     {
-        right: -50vw;
+        right: -100vw;
     }
 }

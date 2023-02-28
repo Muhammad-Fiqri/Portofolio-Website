@@ -10,13 +10,14 @@ body
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -50vw;
+    left: -100vw;
     z-index: 4;
     background-color: #3072e2;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
     transition: 1s;
+    transition-timing-function: ease-out;
 
     display: flex;
     flex-direction: column;

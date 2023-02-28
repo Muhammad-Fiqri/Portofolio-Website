@@ -29,3 +29,22 @@
     cursor: pointer;
     background-color: blue;
 }
+
+@media only screen and (max-width: 600px)
+{
+    .nav
+    {
+        width: 100vw;
+    }
+
+    .nav > p
+    {
+        /*structure it look like a Nav*/
+        float: left;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}

@@ -123,7 +123,7 @@ html
         width: 100vw;
         height: 100vh;
         background-image: url("Assets/Scenery Mobile Background.png");
-        background-size: cover;
+        background-size: 100vw 100vh;
         background-position: center;
         display: flex;
         align-items: center;

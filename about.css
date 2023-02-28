@@ -7,13 +7,14 @@
     border-bottom-left-radius: 25px;
     position: fixed;
     top: 0;
-    right: -50vw;
+    right: -100vw;
     z-index: 4;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     transition: 1s;
+    transition-timing-function: ease-out;
 }
 
 .about-tab > .close-about

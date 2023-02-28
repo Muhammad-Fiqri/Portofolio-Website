@@ -394,12 +394,13 @@
     {
         background-color: #70ccdc;
         padding: 0;
-        width: 80vw;
+        margin-left: -2.5vw;
+        width: 100vw;
         height: 25vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 0px;
         overflow: hidden;
     }
 
@@ -411,7 +412,7 @@
         opacity: 50%;
         padding: 5px;
         border-radius: 100%;
-        left: 12vw;
+        left: 2vw;
         transition: 0.5s;
     }
 
@@ -423,7 +424,7 @@
         opacity: 50%;
         padding: 5px;
         border-radius: 100%;
-        right: 12vw;
+        right: 2vw;
         transition: 0.5s;
     }
 

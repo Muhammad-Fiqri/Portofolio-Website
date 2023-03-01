@@ -35,7 +35,9 @@ function GoMyWorks()
     }
 }
 
-window.onscroll = function() {get_scroll()};
+window.onload = function() {
+    window.onscroll = function() {get_scroll()};
+};
 
 function get_scroll() {
     let screen_width = window.innerWidth;

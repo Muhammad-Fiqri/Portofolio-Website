@@ -9,7 +9,7 @@ function scrollDown()
 
     if (screen_width <= 600)
     {
-        /*Mobil*/
+        /*Mobile*/
         window.scroll(0,912);
     }
 }
@@ -87,14 +87,14 @@ function get_scroll() {
     if (screen_width <= 600)
     {
         godot_progress_bar = $(".godot-progress-bar");
-        if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
+        if (document.documentElement.scrollTop <= 2000 && document.documentElement.scrollTop >= 935) {
             /*console.log("I see the godot progress bar"); only decomment on production*/
             godot_progress_bar.css("animation-name","godot-progress-bar");
         } else {
             godot_progress_bar.css("animation-name","none")
         }
 
-        /*console.log("My Scroll (Mobile): ", document.documentElement.scrollTop); only decomment on production*/
+        console.log("My Scroll (Mobile): ", document.documentElement.scrollTop);
 
         html_progress = $(".html-progress")
         css_progress = $(".css-progress")

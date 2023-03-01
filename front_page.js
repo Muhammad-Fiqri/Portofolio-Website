@@ -1,6 +1,17 @@
 function scrollDown()
 {
-    window.scroll(0,661);
+    let screen_width = window.innerWidth;
+
+    if (screen_width >= 600)
+    {
+        window.scroll(0,661);
+    }
+
+    if (screen_width <= 600)
+    {
+        /*Mobil*/
+        window.scroll(0,912);
+    }
 }
 
 function GoHome()
@@ -10,48 +21,107 @@ function GoHome()
 
 function GoMyWorks()
 {
-    window.scroll(0,661);
+    let screen_width = window.innerWidth;
+
+    if (screen_width >= 600)
+    {
+        window.scroll(0,661);
+    }
+
+    if (screen_width <= 600)
+    {
+        /*Mobil*/
+        window.scroll(0,912);
+    }
 }
 
 window.onscroll = function() {get_scroll()};
 
 function get_scroll() {
-    godot_progress_bar = $(".godot-progress-bar");
-    if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
-        console.log("I see the godot progress bar");
-        godot_progress_bar.css("animation-name","godot-progress-bar");
-    } else {
-        godot_progress_bar.css("animation-name","none")
+    let screen_width = window.innerWidth;
+
+    if (screen_width >= 600)
+    {
+        godot_progress_bar = $(".godot-progress-bar");
+        if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
+            /*console.log("I see the godot progress bar"); only decomment on production*/
+            godot_progress_bar.css("animation-name","godot-progress-bar");
+        } else {
+            godot_progress_bar.css("animation-name","none")
+        }
+
+        /*console.log("My Scroll (Desktop): ", document.documentElement.scrollTop);  only decomment on production*/
+
+        html_progress = $(".html-progress")
+        css_progress = $(".css-progress")
+        js_progress = $(".js-progress")
+        if (document.documentElement.scrollTop >= 1450 && document.documentElement.scrollTop <= 3000) {
+            console.log("I see the web progress bar");
+            html_progress.css("animation-name","html-progress");
+            css_progress.css("animation-name","css-progress");
+            js_progress.css("animation-name","js-progress");
+        } else {
+            html_progress.css("animation-name","none");
+            css_progress.css("animation-name","none");
+            js_progress.css("animation-name","none");
+        }
+
+        premiere_progress = $(".premiere-progress")
+        after_progress = $(".after-progress")
+        audition_progress = $(".audition-progress")
+
+        if (document.documentElement.scrollTop >= 3660 && document.documentElement.scrollTop <= 5000) {
+            /*console.log("I see the video editing progress bar"); only decomment on production*/
+            premiere_progress.css("animation-name","premiere-progress");
+            after_progress.css("animation-name","after-progress");
+            audition_progress.css("animation-name","audition-progress");
+        } else {
+            premiere_progress.css("animation-name","none");
+            after_progress.css("animation-name","none");
+            audition_progress.css("animation-name","none");
+        }
     }
-    console.log("My Scroll: ", document.documentElement.scrollTop);
 
-    html_progress = $(".html-progress")
-    css_progress = $(".css-progress")
-    js_progress = $(".js-progress")
-    if (document.documentElement.scrollTop >= 1450 && document.documentElement.scrollTop <= 3000) {
-        console.log("I see the web progress bar");
-        html_progress.css("animation-name","html-progress");
-        css_progress.css("animation-name","css-progress");
-        js_progress.css("animation-name","js-progress");
-    } else {
-        html_progress.css("animation-name","none");
-        css_progress.css("animation-name","none");
-        js_progress.css("animation-name","none");
-    }
+    if (screen_width <= 600)
+    {
+        godot_progress_bar = $(".godot-progress-bar");
+        if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
+            /*console.log("I see the godot progress bar"); only decomment on production*/
+            godot_progress_bar.css("animation-name","godot-progress-bar");
+        } else {
+            godot_progress_bar.css("animation-name","none")
+        }
 
-    premiere_progress = $(".premiere-progress")
-    after_progress = $(".after-progress")
-    audition_progress = $(".audition-progress")
+        /*console.log("My Scroll (Mobile): ", document.documentElement.scrollTop); only decomment on production*/
 
-    if (document.documentElement.scrollTop >= 3660 && document.documentElement.scrollTop <= 5000) {
-        console.log("I see the video editing progress bar");
-        premiere_progress.css("animation-name","premiere-progress");
-        after_progress.css("animation-name","after-progress");
-        audition_progress.css("animation-name","audition-progress");
-    } else {
-        premiere_progress.css("animation-name","none");
-        after_progress.css("animation-name","none");
-        audition_progress.css("animation-name","none");
+        html_progress = $(".html-progress")
+        css_progress = $(".css-progress")
+        js_progress = $(".js-progress")
+        if (document.documentElement.scrollTop >= 2547 && document.documentElement.scrollTop <= 4371) {
+            /*console.log("I see the web progress bar"); only decomment on production*/
+            html_progress.css("animation-name","html-progress");
+            css_progress.css("animation-name","css-progress");
+            js_progress.css("animation-name","js-progress");
+        } else {
+            html_progress.css("animation-name","none");
+            css_progress.css("animation-name","none");
+            js_progress.css("animation-name","none");
+        }
+
+        premiere_progress = $(".premiere-progress")
+        after_progress = $(".after-progress")
+        audition_progress = $(".audition-progress")
+
+        if (document.documentElement.scrollTop >= 5805 && document.documentElement.scrollTop <= 7000) {
+            /*console.log("I see the video editing progress bar"); only decomment on production*/
+            premiere_progress.css("animation-name","premiere-progress");
+            after_progress.css("animation-name","after-progress");
+            audition_progress.css("animation-name","audition-progress");
+        } else {
+            premiere_progress.css("animation-name","none");
+            after_progress.css("animation-name","none");
+            audition_progress.css("animation-name","none");
+        }
     }
 }
 

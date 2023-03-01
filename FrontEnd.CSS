@@ -373,3 +373,201 @@
 
     font-size: 25px;
 }
+
+@media only screen and (max-width: 600px) 
+{
+    .my-works > .front-end
+    {
+        background-color: #D8EFF5;
+        margin-top: 20vh;
+    }
+
+    .my-works > .front-end > .title {
+        margin: 5vw;
+        width: 95vw;
+        background-color: #d8eff5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 10px solid #3366cc;
+        font-size: 18px;
+        padding: 20px 0 20px 0;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .my-works > .front-end > .main-tab
+    {
+        display: grid;
+        width: 100vw;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+        justify-content: center;
+        align-items: center;
+
+        column-gap: normal;
+        row-gap: normal;
+        padding: 0px;
+    }
+
+    .my-works > .front-end > .main-tab > .layout {
+        font-size: 30px;
+        background-color: #70cddd;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 3fr 4fr 3fr;
+        grid-template-rows: 2fr 6fr 2fr;
+        height: 60vh;
+
+        margin: 0 2.5vw 0 2.5vw;
+
+        grid-row: 1/2;
+    }
+
+    .my-works > .front-end > .main-tab > .levels {
+        margin: 5vw 0 5vw 0;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10vh;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .html-level {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .html-level > h2 {
+        grid-row: 1/2;
+        justify-self: center;
+        font-size: 50px;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .html-level > a {
+        grid-row: 2/3;
+        z-index: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .html-level > a > svg {
+        z-index: 1;
+        margin: auto;
+        transition: 0.2s;
+        transition-timing-function: ease-out;
+        
+        display: block;
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .html-level > .html-progress-bar {
+        align-self: center;
+        background-color: #70cddd;
+        z-index: 0;
+        border-radius: 20px;
+        height: 100px;
+        padding: 10px;
+        margin: 0 2.5vw 0 2.5vw;
+
+        grid-row: 4/5;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .css-level {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .css-level > h2 {
+        grid-row: 1/2;
+        justify-self: center;
+        font-size: 50px;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .css-level > a {
+        z-index: 1;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .css-level > a > svg {
+        z-index: 1;
+        margin: auto;
+        transition: 0.2s;
+        transition-timing-function: ease-out;
+        
+        display: block;
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .css-level > .css-progress-bar {
+        grid-row: 3/4;
+        align-self: center;
+        background-color: #70cddd;
+        z-index: 0;
+        border-radius: 20px;
+        height: 100px;
+        padding: 10px;
+
+        margin: 0 2.5vw 0 2.5vw;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .js-level {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .js-level > h2 {
+        grid-row: 1/2;
+        justify-self: center;
+        font-size: 50px;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .js-level > a {
+        z-index: 1;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .js-level > a > svg {
+        z-index: 1;
+        margin: auto;
+        transition: 0.2s;
+        transition-timing-function: ease-out;
+        
+        display: block;
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .my-works > .front-end > .main-tab > .levels > .js-level > .js-progress-bar {
+        grid-row: 3/4;
+        align-self: center;
+        background-color: #70cddd;
+        z-index: 0;
+        border-radius: 20px;
+        height: 100px;
+        padding: 10px;
+        margin: 0 2.5vw 0 2.5vw;
+    }
+
+    .my-works > .front-end > .main-tab > .info {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+        row-gap: 10vh;
+        margin: 10vh 0 10vh 0;
+    }
+}

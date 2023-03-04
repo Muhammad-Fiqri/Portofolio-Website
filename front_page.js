@@ -254,11 +254,28 @@ function change_videos_slide(n)
 
 function showContacts()
 {
-    contacts_tab = $(".contacts");
-    hover_cover = $(".hover-cover");
+    let screen_width = window.innerWidth;
+    if (screen_width >= 600)
+    {
+        contacts_tab = $(".contacts");
+        hover_cover = $(".hover-cover");
+    
+        hover_cover.css("display", "block");
+        contacts_tab.css("left", "0vw");
+        contacts_tab.css("width", "40vw");
+        contacts_tab.css("height", "100vh");
+    }
 
-    contacts_tab.css("left", "0vw");
-    hover_cover.css("display", "block");
+    if (screen_width <= 600)
+    {
+        contacts_tab = $(".contacts");
+        hover_cover = $(".hover-cover");
+        
+        hover_cover.css("display", "block");
+        contacts_tab.css("left", "0vw");
+        contacts_tab.css("width", "100vw");
+        contacts_tab.css("height", "100vh");
+    }
 }
 
 function hideContacts()

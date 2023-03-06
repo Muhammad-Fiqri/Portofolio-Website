@@ -39,92 +39,99 @@ window.onload = function() {
     window.onscroll = function() {get_scroll()};
 };
 
+//function for animating elements when on screen after scrolled.
 function get_scroll() {
-    let screen_width = window.innerWidth;
+        //get scroll position
+        window_scroll_top = $(window).scrollTop();
 
-    if (screen_width >= 600)
-    {
+        //get element to animate on scroll top offset
         godot_progress_bar = $(".godot-progress-bar");
-        if (document.documentElement.scrollTop <= 1700 && document.documentElement.scrollTop >= 935) {
-            /*console.log("I see the godot progress bar"); only decomment on production*/
+        //get element top offset
+        godot_progress_bar_top_offset = godot_progress_bar.offset().top;
+
+        //calculate the distance between the top of the window and the element to animate on scroll
+        godot_distance_to_screen = godot_progress_bar_top_offset - window_scroll_top
+
+        //check if the distance off element to screen is less then window height, and if true animate it. if negative or more deanimate it.
+        if (godot_distance_to_screen < $(window).height()) {
             godot_progress_bar.css("animation-name","godot-progress-bar");
         } else {
-            godot_progress_bar.css("animation-name","none")
+            godot_progress_bar.css("animation-name","none");
+        } if (godot_distance_to_screen <= 0) {
+            godot_progress_bar.css("animation-name","none");
         }
 
-        /*console.log("My Scroll (Desktop): ", document.documentElement.scrollTop);  only decomment on production*/
+        html_progress = $(".html-progress");
+        html_progress_top_offset = html_progress.offset().top;
+        html_distance_to_screen = html_progress_top_offset - window_scroll_top;
 
-        html_progress = $(".html-progress")
-        css_progress = $(".css-progress")
-        js_progress = $(".js-progress")
-        if (document.documentElement.scrollTop >= 1450 && document.documentElement.scrollTop <= 3000) {
-            console.log("I see the web progress bar");
+        css_progress = $(".css-progress");
+        css_progress_top_offset = css_progress.offset().top;
+        css_distance_to_screen = css_progress_top_offset - window_scroll_top;
+
+        js_progress = $(".js-progress");
+        js_progress_top_offset = js_progress.offset().top;
+        js_distance_to_screen = js_progress_top_offset - window_scroll_top;
+
+        if (html_distance_to_screen < $(window).height()) {
             html_progress.css("animation-name","html-progress");
-            css_progress.css("animation-name","css-progress");
-            js_progress.css("animation-name","js-progress");
         } else {
             html_progress.css("animation-name","none");
+        } if (html_distance_to_screen <= 0) {
+            html_progress.css("animation-name","none");
+        }
+
+        if (css_distance_to_screen < $(window).height()) {
+            css_progress.css("animation-name","css-progress");
+        } else {
             css_progress.css("animation-name","none");
+        } if (css_distance_to_screen <= 0) {
+            css_progress.css("animation-name","none");
+        }
+
+        if (js_distance_to_screen < $(window).height()) {
+            js_progress.css("animation-name","js-progress");
+        } else {
+            js_progress.css("animation-name","none");
+        } if (js_distance_to_screen <= 0) {
             js_progress.css("animation-name","none");
         }
 
-        premiere_progress = $(".premiere-progress")
-        after_progress = $(".after-progress")
-        audition_progress = $(".audition-progress")
+        premiere_progress = $(".premiere-progress");
+        premiere_progress_top_offset = premiere_progress.offset().top;
+        premiere_distance_to_screen = premiere_progress_top_offset - window_scroll_top;
 
-        if (document.documentElement.scrollTop >= 3660 && document.documentElement.scrollTop <= 5000) {
-            /*console.log("I see the video editing progress bar"); only decomment on production*/
+        after_progress = $(".after-progress");
+        after_progress_top_offset = after_progress.offset().top;
+        after_distance_to_screen = after_progress_top_offset - window_scroll_top;
+
+        audition_progress = $(".audition-progress");
+        audition_progress_top_offset = audition_progress.offset().top;
+        audition_distance_to_screen = audition_progress_top_offset - window_scroll_top;
+
+        if (premiere_distance_to_screen < $(window).height()) {
             premiere_progress.css("animation-name","premiere-progress");
-            after_progress.css("animation-name","after-progress");
-            audition_progress.css("animation-name","audition-progress");
         } else {
             premiere_progress.css("animation-name","none");
-            after_progress.css("animation-name","none");
-            audition_progress.css("animation-name","none");
-        }
-    }
-
-    if (screen_width <= 600)
-    {
-        godot_progress_bar = $(".godot-progress-bar");
-        if (document.documentElement.scrollTop <= 2000 && document.documentElement.scrollTop >= 935) {
-            /*console.log("I see the godot progress bar"); only decomment on production*/
-            godot_progress_bar.css("animation-name","godot-progress-bar");
-        } else {
-            godot_progress_bar.css("animation-name","none")
+        } if (premiere_distance_to_screen <= 0) {
+            premiere_progress.css("animation-name","none");
         }
 
-        console.log("My Scroll (Mobile): ", document.documentElement.scrollTop);
-
-        html_progress = $(".html-progress")
-        css_progress = $(".css-progress")
-        js_progress = $(".js-progress")
-        if (document.documentElement.scrollTop >= 2547 && document.documentElement.scrollTop <= 4371) {
-            /*console.log("I see the web progress bar"); only decomment on production*/
-            html_progress.css("animation-name","html-progress");
-            css_progress.css("animation-name","css-progress");
-            js_progress.css("animation-name","js-progress");
-        } else {
-            html_progress.css("animation-name","none");
-            css_progress.css("animation-name","none");
-            js_progress.css("animation-name","none");
-        }
-
-        premiere_progress = $(".premiere-progress")
-        after_progress = $(".after-progress")
-        audition_progress = $(".audition-progress")
-
-        if (document.documentElement.scrollTop >= 5805 && document.documentElement.scrollTop <= 7000) {
-            /*console.log("I see the video editing progress bar"); only decomment on production*/
-            premiere_progress.css("animation-name","premiere-progress");
+        if (after_distance_to_screen < $(window).height()) {
             after_progress.css("animation-name","after-progress");
+        } else {
+            after_progress.css("animation-name","none");
+        } if (after_distance_to_screen <= 0) {
+            after_progress.css("animation-name","none");
+        }
+
+        if (audition_distance_to_screen < $(window).height()) {
             audition_progress.css("animation-name","audition-progress");
         } else {
-            premiere_progress.css("animation-name","none");
-            after_progress.css("animation-name","none");
+            audition_progress.css("animation-name","none");
+        } if (audition_distance_to_screen <= 0) {
             audition_progress.css("animation-name","none");
         }
-    }
 }
 
 

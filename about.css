@@ -80,8 +80,57 @@
 }
 
 @media only screen and (max-width: 600px){
-    .about-tab
-    {
+    .about-tab {
+        width: 100vw;
+        height: 100vh;
+        background-color: #3072e2;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: fixed;
+        top: 0;
         right: -100vw;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        transition: 1s;
+        transition-timing-function: ease-out;
+    }
+
+    .about-tab > .close-about {
+        position: absolute;
+        left: 5vw;
+        right: 0vw;
+        top: 2.5vh;
+    }
+
+    .about-tab > .title {
+        color: white;
+        font-size: 80px;
+    }
+
+    .about-tab > .profile-picture > img {
+        width: 90vw;
+        border-radius: 100%;
+        transition: 1s;
+    }
+    
+    .about-tab > .text {
+        color: white;
+        text-align: center;
+        height: 100%;
+        transition: 1s;
+    }
+
+    .about-tab > .text > #about-important > span {
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .about-tab > .text > #about-content {
+        margin-top: 5vh;
+        font-size: 25px;
     }
 }

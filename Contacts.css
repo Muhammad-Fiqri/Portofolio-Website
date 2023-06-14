@@ -80,7 +80,7 @@ body
     color: white;
 }
 
-.contacts > .links > .upwork-text , .github-text , .instagram-text , .whatsapp-text , .linkedin-text
+.contacts > .links > .fiverr-text , .github-text , .instagram-text , .whatsapp-text , .linkedin-text
 {
     display: flex;
     justify-content: left;
@@ -89,17 +89,17 @@ body
     transition-duration: 0.5s;
 }
 
-.contacts > .links > .upwork-logo , .github-logo , .instagram-logo , .whatsapp-logo , .linkedin-logo
+.contacts > .links > .fiverr-logo , .github-logo , .instagram-logo , .whatsapp-logo , .linkedin-logo
 {
     transition-duration: 1s;
 }
 
-.contacts > .links > .upwork-text:hover , .github-text:hover , .instagram-text:hover , .whatsapp-text:hover , .linkedin-text:hover
+.contacts > .links > .fiverr-text:hover , .github-text:hover , .instagram-text:hover , .whatsapp-text:hover , .linkedin-text:hover
 {
     transform: translateX(50px);
 }
 
-.contacts > .links > .upwork-logo:hover , .github-logo:hover , .instagram-logo:hover , .whatsapp-logo:hover , .linkedin-logo:hover
+.contacts > .links > .fiverr-logo:hover , .github-logo:hover , .instagram-logo:hover , .whatsapp-logo:hover , .linkedin-logo:hover
 {
     display: block;
 }
@@ -149,14 +149,14 @@ body
         column-gap: 5%;
         row-gap: 1%;
     }
-    .contacts > .links > .upwork-logo, .github-logo, .instagram-logo, .whatsapp-logo, .linkedin-logo {
+    .contacts > .links > .fiverr-logo, .github-logo, .instagram-logo, .whatsapp-logo, .linkedin-logo {
         transition-duration: 1s;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .contacts > .links > .upwork-text, .github-text, .instagram-text, .whatsapp-text, .linkedin-text {
+    .contacts > .links > .fiverr-text, .github-text, .instagram-text, .whatsapp-text, .linkedin-text {
         display: flex;
         justify-content: left;
         align-items: center;

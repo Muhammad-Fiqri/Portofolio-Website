@@ -45,6 +45,8 @@
 
 .about-tab > .profile-picture > img
 {
+    aspect-ratio: 1/1;
+    width: 15vw;
     border-radius: 100%;
     transition: 1s;
 }
@@ -103,6 +105,7 @@
         left: 5vw;
         right: 0vw;
         top: 2.5vh;
+        width: min-content;
     }
 
     .about-tab > .title {
@@ -111,7 +114,8 @@
     }
 
     .about-tab > .profile-picture > img {
-        width: 90vw;
+        aspect-ratio: 1/1;
+        width: 50vw;
         border-radius: 100%;
         transition: 1s;
     }
@@ -125,12 +129,22 @@
 
     .about-tab > .text > #about-important > span {
         color: white;
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
     }
 
     .about-tab > .text > #about-content {
         margin-top: 5vh;
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .about-tab > .text:hover
+    {
+        transform: scale(1.05,1.05);
+    }
+
+    .about-tab > .text:hover > p
+    {
+        text-shadow: 5px 5px 5px black;
     }
 }
